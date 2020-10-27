@@ -1,4 +1,11 @@
-form {
+.example-viewport {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.cdk-virtual-scroll-content-wrapper {
   display: flex;
   flex-direction: column;
 }

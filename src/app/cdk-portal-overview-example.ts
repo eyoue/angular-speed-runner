@@ -16,7 +16,7 @@ import { interval, Observable, Subject } from "rxjs";
 import { takeUntil, takeWhile } from "rxjs/operators";
 
 export const MAX_SYMBOLS = 10;
-export const COUNT_PLAYERS = 120;
+export const COUNT_PLAYERS = 50;
 export const MIN_WRITE_SPEED = 500; // ms
 export const MAX_WRITE_SPEED = 1750; //ms
 
