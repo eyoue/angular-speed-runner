@@ -3,7 +3,7 @@
 
 
 <form>
-	<cdk-virtual-scroll-viewport itemSize="10" minBufferPx="20" maxBufferPx="40" class="example-viewport">
+	<cdk-virtual-scroll-viewport itemSize="50" minBufferPx="200" maxBufferPx="400" class="example-viewport">
 		<ng-template *cdkVirtualFor="let player of playersList; let i = index" [cdkPortalOutlet]="playerOutletRef"
 			(attached)="setInputs($event, i + 1)"></ng-template>
 	</cdk-virtual-scroll-viewport>
