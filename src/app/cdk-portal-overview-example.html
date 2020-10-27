@@ -1,0 +1,8 @@
+<p>Winner: <b>{{winner || 'Not detected'}}</b></p>
+<button *ngIf="winner" (click)="winnerClear()">Try again</button>
+
+
+<form>
+	<ng-template *ngFor="let player of playersList; let i = index" [cdkPortalOutlet]="playerOutletRef"
+		(attached)="setInputs($event, i + 1)"></ng-template>
+</form>
